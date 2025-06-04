@@ -1,0 +1,32 @@
+### Hello World
+GET https://localhost:5001/hello
+Accept: application/json
+
+### Hello World
+GET https://localhost:5001/helloobj
+Accept: application/json
+
+### Get Albums
+GET https://localhost:5001/album
+Accept: application/json
+
+### Get Album with Title
+GET https://localhost:5001/artist/artistname
+Accept: application/json
+
+### Get Album with Title
+GET https://localhost:5001/album/AlbumTitle?Artist=Artistname
+Accept: application/json
+
+### Get Album with Title and Artist
+GET https://localhost:5001/album/Title?artist=ArtistName
+Accept: application/json
+
+### Parameters
+POST https://localhost:5001/parameters/123?a=somerandomtitle
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Alex Hensen"
+}

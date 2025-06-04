@@ -1,0 +1,32 @@
+### Get all albums
+GET https://localhost:5000/albums
+Accept: application/json
+
+### Get album by id
+GET https://localhost:5000/albums/61082627-a4e6-4a11-bb29-6a5991424861
+Accept: application/json
+
+### Create album
+POST https://localhost:5000/albums
+Content-Type: application/json
+
+{
+  "title": "They won the SuperBowl",
+  "artist": "Taylor Swift",
+  "releaseDate": "2024-02-12T00:00:00"
+}
+
+### Update album
+PUT https://localhost:5000/albums/61082627-a4e6-4a11-bb29-6a5991424861
+Content-Type: application/json
+
+{
+  "title": "Midnights",
+  "artist": "Taylor Swift",
+  "releaseDate": "2022-10-21T00:00:00"
+}
+
+
+### Delete album
+DELETE https://localhost:5000/albums/e45e6630-4595-400b-910c-fa70dcd586c9
+Accept: application/json
